@@ -28,7 +28,7 @@ load_dotenv()
 @st.cache_resource
 def load_llm_model():
     # Using a highly stable, production-grade free tier model to avoid quota traps
-    return ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite")
+    return ChatGoogleGenerativeAI(model="gemini-3.5-flash-lite")
 
 # Initialize the cached model connection
 llm = load_llm_model()
